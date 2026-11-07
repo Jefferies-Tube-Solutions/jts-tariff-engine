@@ -39,3 +39,20 @@ authorizes a reviewable v1.1 beta PR and guarded prerelease after all checks, ne
 a main merge or stable/latest replacement. PAHA02-DEV visual acceptance remains owner
 work. If ordinary GitHub PR creation is rejected, record its exact gate and comparison
 URL without bypassing it; complete and preserve all independent validation first.
+
+## JTS Brand System
+
+Use the [central JTS Brand System](https://github.com/Jefferies-Tube-Solutions/jts-brand-system)
+as the source of truth for design, product identity and documentation. Start with
+[VIS-001–003](https://github.com/Jefferies-Tube-Solutions/jts-brand-system/blob/v1.1.0/docs/README_LAYOUT.md)
+and [DOC-001](https://github.com/Jefferies-Tube-Solutions/jts-brand-system/blob/v1.1.0/docs/DOCUMENTATION_PROTOCOL.md).
+Use local copies of approved artwork with pinned provenance. Keep status badges
+truthful, preserve original attribution and maintain paired human and AI manuals
+for material changes. Check applicable Home Assistant guidance before changing
+HA surfaces or packaging. For visual changes, review rendered light/dark and
+mobile views and record the actual evidence in the pull request. If a brand
+requirement cannot be checked or an asset is awaiting approval, record that
+explicitly. Run JTS Brand Compliance before merging.
+
+Run `python tools/validate_brand.py` for the approved Tariff Engine assets,
+README, product manuals and Home Assistant/HACS display identity.
