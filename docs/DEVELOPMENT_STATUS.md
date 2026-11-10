@@ -1,3 +1,15 @@
+# Shared JTS validation and automatic code review
+
+Branch: `governance/shared-jts-check`. Base: `4d856cc`.
+Checkpoint: **Use the shared JTS Brand System action**.
+
+The existing required brand check uses the shared Tariff Engine profile pinned
+to `172c99e39fbe94cea769b00d8ac20c46cd811e57`. The profile passed against the
+current Tariff Engine checkout. Codex is configured for all pull requests and
+new commits. This change affects repository governance only.
+
+---
+
 # Service info documentation link and English Configure overview
 
 Branch: `enhancement/service-info-documentation`. Base: published v1.2.0 (`107b01cd7f19b5474420cbcddf30b923248aa30b`).
