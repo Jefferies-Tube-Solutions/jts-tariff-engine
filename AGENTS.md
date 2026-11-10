@@ -54,5 +54,16 @@ mobile views and record the actual evidence in the pull request. If a brand
 requirement cannot be checked or an asset is awaiting approval, record that
 explicitly. Run JTS Brand Compliance before merging.
 
-Run `python tools/validate_brand.py` for the approved Tariff Engine assets,
-README, product manuals and Home Assistant/HACS display identity.
+The required `Validate JTS design and documentation` job runs the
+[shared JTS check](https://github.com/Jefferies-Tube-Solutions/jts-brand-checks)
+pinned in `.github/workflows/brand.yml`. It checks the approved assets, README,
+product manuals and Home Assistant/HACS display identity.
+
+## Code Review Rules
+
+- Under DOC-001, compare material changes to pricing, configuration, storage,
+  recovery and API v2 with both the human guide and the AI reference. Flag
+  operational advice that risks data loss or represents unknown prices as zero.
+- Apply VIS-001–003 and HA-001–002 to changes in approved artwork, release status,
+  packaging or Home Assistant identity. Cite the applicable JTS rule and
+  distinguish automated checks from live verification.
