@@ -1,6 +1,6 @@
 # JTS Tariff Engine — Human Operations Manual
 
-For JTS Tariff Engine v1.2.1. [AI Systems Reference](../ai/tariff-engine.md).
+For JTS Tariff Engine v1.2.1.
 
 ## Mission Directive
 
@@ -34,6 +34,6 @@ installation. [Test evidence](../DEVELOPMENT_STATUS.md).
 ## Fault Isolation and Recovery
 
 Check Nord Pool availability and the effective dates of the grid and supplier
-rates. Use **Check prices now** to retry verification. Back up Home Assistant
-and the integration's SQLite files before updating. Restore a matching backup
-for rollback. [Data retention and rollback](../HACS_DISTRIBUTION.md#data-retention-and-rollback).
+rates. Use **Check prices now** to retry verification. Delete the site's SQLite files to recover from an incomplete price history.
+The integration restores the full history and its prior revisions from Nord Pool
+on the next update. A backup is unnecessary. [Data retention and rollback](../HACS_DISTRIBUTION.md#data-retention-and-rollback).
